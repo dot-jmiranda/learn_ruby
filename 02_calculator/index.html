@@ -1,70 +1,98 @@
 <html>
-  <head>
-    <title>Test-First Teaching: learn_ruby: calculator</title>
-    <link href="../assets/style.css" media="screen" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="header">
-      <h1><a href="http://testfirst.org">TestFirst.org</a></h1>
-      <h2>the home of test-first teaching</h2>
-    </div>
-    <div class="nav">
-      <h2><a href="../index.html">learn_ruby</a></h2>
-      <b>Labs:</b>
-      <ul>
-        <li><a href="../00_hello/index.html">00 Hello</a></li>
-        <li><a href="../01_temperature/index.html">01 Temperature</a></li>
-        <li>02 Calculator</li>
-        <li><a href="../03_simon_says/index.html">03 Simon Says</a></li>
-        <li><a href="../04_pig_latin/index.html">04 Pig Latin</a></li>
-        <li><a href="../05_book_titles/index.html">05 Book Titles</a></li>
-        <li><a href="../06_timer/index.html">06 Timer</a></li>
-      </ul>
-    </div>
-    <h1>calculator</h1>
-    <div class="content"><div class="rspec_file">  <div class="intro"><h1>Topics</h1>
 
-<ul>
-<li>functions</li>
-<li>math</li>
-<li>arrays</li>
-<li>iterating/looping</li>
-</ul>
+<head>
+  <title>Test-First Teaching: learn_ruby: calculator</title>
+  <link href="../assets/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
 
+<body>
+  <div class="header">
+    <h1><a href="http://testfirst.org">TestFirst.org</a></h1>
+    <h2>the home of test-first teaching</h2>
+  </div>
+  <div class="nav">
+    <h2><a href="../index.html">learn_ruby</a></h2>
+    <b>Labs:</b>
+    <ul>
+      <li><a href="../00_hello/index.html">00 Hello</a></li>
+      <li><a href="../01_temperature/index.html">01 Temperature</a></li>
+      <li>02 Calculator</li>
+      <li><a href="../03_simon_says/index.html">03 Simon Says</a></li>
+      <li><a href="../04_pig_latin/index.html">04 Pig Latin</a></li>
+      <li><a href="../05_book_titles/index.html">05 Book Titles</a></li>
+      <li><a href="../06_timer/index.html">06 Timer</a></li>
+    </ul>
+  </div>
+  <h1>calculator</h1>
+  <div class="content">
+    <div class="rspec_file">
+      <div class="intro">
+        <h1>Topics</h1>
 
-<h1>Calculator</h1>
+        <ul>
+          <li>functions</li>
+          <li>math</li>
+          <li>arrays</li>
+          <li>iterating/looping</li>
+        </ul>
 
-<p>you will build a simple calculator script with the following methods:</p>
+        <h1>Calculator</h1>
 
-<p><code>add</code> takes two parameters and adds them</p>
+        <p>
+          you will build a simple calculator script with the following
+          methods:
+        </p>
 
-<p><code>subtract</code> takes two parameters and subtracts the second from the first</p>
+        <p><code>add</code> takes two parameters and adds them</p>
 
-<p><code>sum</code> takes an <em>array</em> of parameters and adds them all together</p>
+        <p>
+          <code>subtract</code> takes two parameters and subtracts the second
+          from the first
+        </p>
 
-<h1>Warning</h1>
+        <p>
+          <code>sum</code> takes an <em>array</em> of parameters and adds them
+          all together
+        </p>
 
-<p>You may not have enough knowledge yet to complete <code>sum</code>. You will probably
-need to use <strong>loops</strong> (e.g. <code>while</code>) or <strong>iterators</strong> (e.g. <code>each</code>) to
-get the tests to pass.</p>
+        <h1>Warning</h1>
 
-<h1>Bonus</h1>
+        <p>
+          You may not have enough knowledge yet to complete <code>sum</code>.
+          You will probably need to use <strong>loops</strong> (e.g.
+          <code>while</code>) or <strong>iterators</strong> (e.g.
+          <code>each</code>) to get the tests to pass.
+        </p>
 
-<p>There are also some bonus exercises for when you finish the regular ones. The bonus round will help teach you test-driven <em>development</em>, not simply test-guided <em>learning</em>.</p>
+        <h1>Bonus</h1>
 
-<p>Your mission, should you choose to accept it, is to write <em>tests</em> for three new methods:</p>
+        <p>
+          There are also some bonus exercises for when you finish the regular
+          ones. The bonus round will help teach you test-driven
+          <em>development</em>, not simply test-guided <em>learning</em>.
+        </p>
 
-<ul>
-<li><code>multiply</code> which multiplies two numbers together</li>
-<li><code>power</code> which raises one number to the power of another number</li>
-<li><code>[factorial](http://en.wikipedia.org/wiki/Factorial)</code> (check Wikipedia if you forgot your high school math).</li>
-</ul>
+        <p>
+          Your mission, should you choose to accept it, is to write
+          <em>tests</em> for three new methods:
+        </p>
 
-</div>
-  <div class="tests">
-    <h1>Tests</h1>
-<a class="raw_file" href="calculator_spec.rb">calculator_spec.rb</a>
-    <pre>
+        <ul>
+          <li><code>multiply</code> which multiplies two numbers together</li>
+          <li>
+            <code>power</code> which raises one number to the power of another
+            number
+          </li>
+          <li>
+            <code>[factorial](http://en.wikipedia.org/wiki/Factorial)</code>
+            (check Wikipedia if you forgot your high school math).
+          </li>
+        </ul>
+      </div>
+      <div class="tests">
+        <h1>Tests</h1>
+        <a class="raw_file" href="calculator_spec.rb">calculator_spec.rb</a>
+        <pre>
 require &quot;calculator&quot;
 
 describe &quot;add&quot; do
@@ -129,9 +157,10 @@ describe &quot;#factorial&quot; do
   it &quot;computes the factorial of 5&quot;
   it &quot;computes the factorial of 10&quot;
 end</pre>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-    <div class="footer"><a href="http://testfirst.org">TestFirst.org</a></div>
-  </body>
+  <div class="footer"><a href="http://testfirst.org">TestFirst.org</a></div>
+</body>
+
 </html>
